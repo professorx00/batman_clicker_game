@@ -11,7 +11,7 @@ class App extends Component {
     current: 0,
     isCorrect: "",
     characters: characters,
-    alertColor: "white"
+    alert: "alert"
   };
 
   
@@ -30,23 +30,24 @@ class App extends Component {
   }
 
   handleOnCickEvent = (event)=>{
-    let highest=this.state.highest
-    let current = this.state.current
-    let imagesArray = this.state.clicked
-    let alertColor = "white"
-    const currentImage = event.target.dataset.id
-    const isCorrect = this.checkCharacter(currentImage)
+    let highest=this.state.highest;
+    let current = this.state.current;
+    let imagesArray = this.state.clicked;
+    const currentImage = event.target.dataset.id;
+    const isCorrect = this.checkCharacter(currentImage);
+    let alert = this.state.alert;
     if(isCorrect==="Is Incorrect Guess! You Lose"){
-      alertColor="Red";
       highest= current>highest? current:highest;
-      current=0
-      imagesArray=[]
+      current=0;
+      imagesArray=[];
+      alert = "alertWrong";
     }
     else{
-      alertColor="Green";
+
       imagesArray.push(currentImage);
       current++;
       highest= current>highest? current:highest;
+      alert = "alertCorrect"
     }
     this.setState({
       characters: this.state.characters.sort(() => Math.random() - 0.5),
@@ -54,13 +55,13 @@ class App extends Component {
       clicked: imagesArray,
       highest: highest,
       current:current,
-      alertColor: alertColor
+      alert: alert
     })
   }
   render(){
     return(
-      <div class="App">
-        <NavBar current={this.state.current} highest={this.state.highest} isCorrect={this.state.isCorrect}/>
+      <div className="App">
+        <NavBar current={this.state.current} alert={this.state.alert} highest={this.state.highest} isCorrect={this.state.isCorrect}/>
         <div className="container">
           <Grid characters={this.state.characters} handleOnCickEvent = {this.handleOnCickEvent}/>
         </div>

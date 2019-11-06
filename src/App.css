@@ -1,5 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
+
+*{
+  font-family: 'Rubik Mono One', sans-serif;
+}
 .App {
   background-color: #282c34;
+}
+*.red{
+  border: red 2px solid;
+}
+#nav{
+  color:white;
+  background-color: #6a6f79;
+}
+*.alert{
+  color: white;
+}
+*.alertCorrect{
+  color: rgb(154, 216, 154);
+}
+*.alertWrong{
+  color:rgb(207, 107, 107);
 }
 #imageGrid{
   display: grid;
@@ -10,7 +31,7 @@ img.Images{
   height: 200px;
 }
 div.imageContainer{
-  align-items: center;
+  text-align: center;
 }
 h1.alert{
   color:white
@@ -21,3 +42,36 @@ h1.alertCorrect{
 h1.alertWrong{
   color:green
 }
+img.icon{
+  max-width:100px;
+}
+@media (min-width: 0px) { 
+  #imageGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (min-width: 767.98px) { 
+  #imageGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+ }
+
+ /* Medium devices (tablets, less than 992px) */
+@media (min-width: 991.98px) { 
+  #imageGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+ }
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 1199.98px) { 
+  #imageGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+ }
