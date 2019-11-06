@@ -1,0 +1,23 @@
+.App {
+  background-color: #282c34;
+}
+#imageGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+img.Images{
+  width: 150px;
+  height: 200px;
+}
+div.imageContainer{
+  align-items: center;
+}
+h1.alert{
+  color:white
+}
+h1.alertCorrect{
+  color:green
+}
+h1.alertWrong{
+  color:green
+}

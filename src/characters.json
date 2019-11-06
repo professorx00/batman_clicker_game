@@ -1,0 +1,62 @@
+[
+  {
+    "id": 0,
+    "img": "/characterImages/Bane.jpg",
+    "name": "Bane"
+  },
+  {
+    "id": 1,
+    "img": "/characterImages/batman.jpg",
+    "name": "Batman"
+  },
+  {
+    "id": 2,
+    "img":"/characterImages/catwoman.png" ,
+    "name": "Cat Woman"
+  },
+  {
+    "id": 3,
+    "img": "/characterImages/croc.jpg",
+    "name": "Killer Croc"
+  },
+  {
+    "id": 4,
+    "img": "/characterImages/joker.jpg",
+    "name": "Joker"
+  },
+  {
+    "id": 5,
+    "img": "/characterImages/madhatter.jpg",
+    "name": "Mad Hatter"
+  },
+  {
+    "id": 6,
+    "img": "/characterImages/mrFreeze.jpg",
+    "name": "Mr. Freeze"
+  },
+  {
+    "id": 7,
+    "img": "/characterImages/penguin.jpg",
+    "name": "Penguin"
+  },
+  {
+    "id": 8,
+    "img": "/characterImages/posionivy.jpg",
+    "name": "Poision Ivy"
+  },
+  {
+    "id": 9,
+    "img": "/characterImages/rashaghul.jpg",
+    "name": "Rasha Al Ghul"
+  },
+  {
+    "id": 10,
+    "img": "/characterImages/robin.jpg",
+    "name": "Robin"
+  },
+  {
+    "id": 11,
+    "img": "/characterImages/twoface.jpg",
+    "name": "Two Face"
+  }
+]
